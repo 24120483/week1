@@ -10,3 +10,9 @@ void TowersofHanoi(int n, char from, char to, char temp) {
 	cout << "chuyen dia " << n << " tu " << from << " den " << to << endl;	//sau khi chuyen n-1 dai sang cot trung gian thi chuyen dia cuoi cung sang cot dich
 	TowersofHanoi(n - 1, temp, to, from);	//goi de quy de chuyen n-1 dia con lai de n-1 dia chuyen tu cot trung gian sang cot dich
 }
+int main() {
+	int n;
+	cin >> n;
+	TowersofHanoi(n, 'A', 'C', 'B');
+	return 0;
+}

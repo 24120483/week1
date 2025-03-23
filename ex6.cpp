@@ -34,3 +34,15 @@ void sapxephau(int* arr, int n, int hang) {
 		}
 	}
 }
+int main() {
+	int n;
+	cin >> n;
+	int* a = new int[n];
+	for (int i = 0; i < n; i++) {
+		a[i] = -1;
+	}
+	sapxephau(a, n, 0);
+	delete a;
+	return 0;
+
+}

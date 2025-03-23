@@ -10,3 +10,18 @@ int sorted(int* arr, int n) {
 	}
 	return sorted(arr, n - 1);
 }
+int main() {
+	int n;
+	cin >> n;
+	int* a = new int[n];
+	for (int i = 0; i < n; i++) {
+		cin >> a[i];
+	}
+	if (sorted(a, n)) {
+		cout << "mang da duoc sap xep tang dan";
+	}
+	else {
+		cout << "mang khong duoc sap xep tang dan";
+	}
+	return 0;
+}
